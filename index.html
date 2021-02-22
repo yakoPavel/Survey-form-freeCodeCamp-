@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>freeCodeCamp survey form</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title" id="title">
+            freeCodeCamp Survey Form
+        </h1>
+        <p class="header__description" id="description">
+            Thank you for taking the time to help us improve the platform
+        </p>
+    </header>
+
+    <form action="#" class="form" id="survey-form">
+        <div class="form__section">
+            <label for="name" class="form__label" id="name-label">Name</label>
+            <input type="text" class="form__name" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form__section">
+            <label for="email" class="form__label" id="email-label">Email</label>
+            <input type="email" class="form__email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form__section">
+            <label for="number" class="form__label" id="number-label">Age (<span class="sub-note">optional</span>)</label>
+            <input type="number" class="form__age" id="number" placeholder="Age" min="10" max="99">
+        </div>
+
+        <div class="form__section">
+            <label for="dropdown" class="form__label">Which option best describes your current role?</label>
+            <select name="role" id="dropdown" class="form__role">
+                <option value="student" class="form__role-option">Student</option>
+                <option value="ftj" class="form__role-option">Full time job</option>
+                <option value="ftl" class="form__role-option">Full time learner</option>
+                <option value="secret" class="form__role-option">Prefer not to say</option>
+                <option value="other" class="form__role-option">Other</option>
+            </select>
+        </div>
+
+        <div class="form__section">
+            <p class="form__label">Would you recommend us to your friends?</p>
+            <label class="form__label"><input type="radio" name="recommend" value="definitely">Definitely</label>
+            <label class="form__label"><input type="radio" name="recommend" value="maybe">Maybe</label>
+            <label class="form__label"><input type="radio" name="recommend" value="not sure">Not sure</label>
+        </div>
+
+        <div class="form__section">
+            <label for="dropdown2" class="form__label">What is your favorite feature of freeCodeCamp?</label>
+            <select name="fav-feature" id="dropdown2" class="form__fav-feature">
+                <option value="student" class="form__fav-feature-option">Challenges</option>
+                <option value="ftj" class="form__fav-feature-option">Projects</option>
+                <option value="ftl" class="form__fav-feature-option">Community</option>
+                <option value="secret" class="form__fav-feature-option">Open Source</option>
+            </select>
+        </div>
+
+        <div class="form__section">
+            <p class="form__label">What would you like to see improved? (<span class="sub-note">Check all that apply</span>)</p>
+            <label class="form__label"><input type="checkbox" name="improvement1" value="frontend">Front-end Projects</label>
+            <label class="form__label"><input type="checkbox" name="improvement2" value="backend">Back-end Projects</label>
+            <label class="form__label"><input type="checkbox" name="improvement3" value="data_viz">Data Visualization</label>
+            <label class="form__label"><input type="checkbox" name="improvement4" value="challenges">Challenges</label>
+            <label class="form__label"><input type="checkbox" name="improvement5" value="open_source">Open Source Community</label>
+            <label class="form__label"><input type="checkbox" name="improvement6" value="help_rooms">Gitter help rooms</label>
+            <label class="form__label"><input type="checkbox" name="improvement7" value="videos">Videos</label>
+            <label class="form__label"><input type="checkbox" name="improvement8" value="meetups">City Meetups</label>
+            <label class="form__label"><input type="checkbox" name="improvement9" value="wiki">Wiki</label>
+            <label class="form__label"><input type="checkbox" name="improvement10" value="forum">Forum</label>
+            <label class="form__label"><input type="checkbox" name="improvement11" value="additional_courses">Additional Courses</label>
+        </div>
+
+        <div class="form__section">
+            <label for="comments" class="form__label">Any comments or suggestions?</label>
+            <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div class="form__section">
+            <button class="form__submit" type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

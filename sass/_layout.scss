@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 6rem 0 2rem;
+}
+
+.header {
+  text-align: center;
+
+  &__title {
+    margin-bottom: .5rem;
+  }
+}
+
+.form {
+  background-color: rgba($primary-color, .7);
+  padding: 3rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 2rem;
+  }
+
+
+
+  &__submit {
+    padding: 1rem;
+    border: none;
+    background-color: $tertiary-color;
+    color: $primary-color;
+    font-weight: bold;
+    box-shadow: 1px 4px 3px rgba(#000, .1);
+    transition: all .2s;
+  }
+
+  &__submit:active {
+    transform: translateY(3px);
+    box-shadow: 0 1px 1px rgba(#000, .3);
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+    outline: 1px solid $tertiary-color;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: .5rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    padding: .5rem;
+    border-radius: 5px;
+    border: 1px solid $font-color;
+  }
+
+  textarea {
+    height: 10rem;
+  }
+
+  input:invalid:focus {
+    outline: 1px solid orangered;
+  }
+
+}
